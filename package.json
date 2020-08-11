@@ -1,14 +1,15 @@
 {
-  "name": "nodejs-api",
+  "name": "nodeapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "let's go!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "[ZER0-1NN]",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
@@ -17,5 +18,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZER0-1NN/NodeJS-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZER0-1NN/NodeJS-project/issues"
+  },
+  "homepage": "https://github.com/ZER0-1NN/NodeJS-project#readme"
 }
