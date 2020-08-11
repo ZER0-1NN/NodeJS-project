@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "startdb": "mongod --dbpath /home/zer0_1nn/Documentos/Programação/Programação\\ em\\ JavaScript/NodeJS-Project/mongodb/data/db/"
   },
   "keywords": [],
   "author": "[ZER0-1NN]",
