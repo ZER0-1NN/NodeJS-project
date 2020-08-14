@@ -1,4 +1,4 @@
-# Projeto em NodeJS - RockeatSeat
+# Projeto em NodeJS - RocketSeat
 
 ### Este é um projeto feito em NodeJS.
 
