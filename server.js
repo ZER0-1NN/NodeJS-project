@@ -1,30 +1,24 @@
-const express = require('express');
 const mongoose = require('mongoose');
+const express = require('express');
 const requireDir = require('require-dir');
+
 
 // Iniciando o APP
 const app = express();
 
+app.use(express.json());
 
 // Criando conexão com o MongoDB
 mongoose.connect('mongodb://localhost:27017/nodeapi',
     { 
-        useNewUrlParser: true, useUnifiedTopology: true 
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useFindAndModify: false,
     }
 );
+requireDir("./src/models");
 
-requireDir('./src/models');
-
-const Product = mongoose.model('Product');
-
-app.get('/', (req, res) => {
-    Product.create({
-        title: 'NodeJS',
-        description: 'Build native apps with Node',
-        url: 'http://github.com/facebook/node-js'
-    });
-
-    return res.send('Hello guys!');
-});
+// Rotas
+app.use('/api', require('./src/routes'));
 
 app.listen(8080);
