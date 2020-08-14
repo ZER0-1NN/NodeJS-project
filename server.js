@@ -6,7 +6,7 @@ const mongoose = require('mongoose'),
 // Iniciando o APP
 const app = express();
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 
 // Criando conexão com o MongoDB
