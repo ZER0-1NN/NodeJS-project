@@ -4,10 +4,9 @@
   "description": "let's go!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "node server.js",
-    "startdb": "mongod --dbpath /home/zer0_1nn/Documentos/Programação/Programação\\ em\\ JavaScript/NodeJS-Project/mongodb/data/db/"
+    "startdb": "mongod --dbpath C:/Users/ZER0.1NN/Desktop/Programação/Progra~2/Curson~1/mongodb/data/db"
   },
   "keywords": [],
   "author": "[ZER0-1NN]",
@@ -15,7 +14,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.9.28",
+    "mongoose": "^5.10.0",
     "mongoose-paginate": "^5.0.3",
     "require-dir": "^1.2.0"
   },
